@@ -474,12 +474,12 @@ export default {
           "sub.cm": "https://sub.cm/short",
         },
         customBackend: {
-          "自己搭建的后端": "http://192.168.1.88:3666",
-          "自己搭建的后端备用": "http://192.168.1.88:3667",
+          "自己搭建的后端": "http://192.168.1.88:3666/sub?",
+          "自己搭建的后端备用": "http://192.168.1.88:3667/sub?",
         },
         backendOptions: [
-          {value: "http://192.168.1.88:3666"},
-          {value: "http://192.168.1.88:3667"},
+          {value: "http://192.168.1.88:3666/sub?"},
+          {value: "http://192.168.1.88:3667/sub?"},
         ],
         remoteConfig: [
           {
