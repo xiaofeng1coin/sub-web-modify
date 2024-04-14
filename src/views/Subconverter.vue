@@ -474,22 +474,12 @@ export default {
           "sub.cm": "https://sub.cm/short",
         },
         customBackend: {
-          "肥羊增强型后端【vless reality+hy1+hy2】": "https://apiurl.v1.mk",
-          "肥羊备用后端【vless reality+hy1+hy2】": "https://sub.d1.mk",
-          "つつ-多地防失联【负载均衡+国内优化】": "https://api.tsutsu.one",
-          nameless13提供: "https://www.nameless13.com",
-          subconverter作者提供: "https://sub.xeton.dev",
-          "sub-web作者提供": "https://api.wcc.best",
-          "sub作者&lhie1提供": "https://api.dler.io",
+          自己搭建的后端: "http://192.168.1.88:3666",
+          自己搭建的后端备用: "http://192.168.1.88:3667",
         },
         backendOptions: [
-          {value: "https://apiurl.v1.mk"},
-          {value: "https://sub.d1.mk"},
-          {value: "https://api.tsutsu.one"},
-          {value: "https://www.nameless13.com"},
-          {value: "https://sub.xeton.dev"},
-          {value: "https://api.wcc.best"},
-          {value: "https://api.dler.io"},
+          {value: "http://192.168.1.88:3666"},
+          {value: "http://192.168.1.88:3667"},
         ],
         remoteConfig: [
           {
@@ -888,8 +878,8 @@ export default {
       },
       form: {
         sourceSubUrl: "",
-        clientType: "",
-        customBackend: this.getUrlParam() == "" ? "https://apiurl.v1.mk" : this.getUrlParam(),
+        clientType: "Clash",
+        customBackend: "",
         shortType: "https://v1.mk/short",
         remoteConfig: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_NoAuto.ini",
         excludeRemarks: "",
